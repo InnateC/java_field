@@ -9,8 +9,8 @@ public class GetEnvVariableTest {
     @Test
     public void testEnvExtraction() {
 
-        String var = GetEnvVariable.getEnv("HOME");
-        assertEquals("strings should be equal", var, "/home/denis");
+        String var = GetEnvVariable.getEnv("DESKTOP_SESSION");
+        assertEquals("strings should be equal", var, "gnome");
 
 
     }
