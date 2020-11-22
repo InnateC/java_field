@@ -31,6 +31,8 @@ class MyThread implements Runnable {
 public class Multithread1 {
 
     public static void main(String args[]) {
+        System.out.println("You have " + Runtime.getRuntime().availableProcessors() + " processors on your machine");
+
         new MyThread("one");
         new MyThread("two");
         new MyThread("three");
