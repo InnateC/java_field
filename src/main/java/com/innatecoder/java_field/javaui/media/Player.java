@@ -1,6 +1,8 @@
 package com.innatecoder.java_field.javaui.media;
 
-import java.io.File;
+
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -15,19 +17,17 @@ public class Player extends Application {
     @Override
         public void start(Stage primaryStage) {
             try {
-                var mediafile = new File("src/main/java/com/innatecoder/java_field/javaui/media/aperture.mp3");
                 
-                var media = new Media(mediafile.toURI().toURL().toString());
-                var mediaPlayer = new MediaPlayer(media);
-            
+                //primaryStage.setTitle("Media Player");
+                //var mediafile = new File("src/main/java/com/innatecoder/java_field/javaui/media/Portal.mp4");
+                
+                //var media = new Media(mediafile.toURI().toURL().toString());
+                //var mediaPlayer = new MediaPlayer(media);
+                                
                                 
                 Stage stage = FXMLLoader.load(getClass().getResource("media.fxml"));
-                System.out.println(stage.getScene().getRoot().getChildrenUnmodifiable().);
-                //stage.getScene().getRoot().getChildrenUnmodifiable().
-                stage.setTitle("Media Player");
                 stage.show();
-                mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-                mediaPlayer.setAutoPlay(true);
+                
 
             } catch (Exception e) {
                 e.printStackTrace();
