@@ -1,4 +1,4 @@
-package com.innatecoder.java_field.Thread;
+package com.innatecoder.java_field.concurrency;
 
 /**
     Example of anonymous thread class

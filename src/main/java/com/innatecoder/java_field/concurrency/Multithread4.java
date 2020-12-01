@@ -1,4 +1,4 @@
-package com.innatecoder.java_field.Thread;
+package com.innatecoder.java_field.concurrency;
 
 public class Multithread4 {
     public static void main(String[] args) {
