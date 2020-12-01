@@ -5,7 +5,6 @@ import java.net.MalformedURLException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -28,8 +27,8 @@ public class MainController {
 
     @FXML
     private void clickStop(ActionEvent event)  {
-      
-        view.getMediaPlayer().stop();;
+        
+        view.getMediaPlayer().pause();;
     }
 
     @FXML
