@@ -4,21 +4,26 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.media.MediaView?>
 <?import javafx.stage.Stage?>
 
-<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.innatecoder.java_field.javaui.media.MainController">
+<Stage fx:id="main" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.innatecoder.java_field.javaui.media.MainController">
     <scene>
         <Scene>
-            <AnchorPane prefHeight="304.0" prefWidth="461.0">
+            <AnchorPane prefHeight="500.0" prefWidth="800.0">
             <children>
-               <ButtonBar layoutX="214.0" layoutY="225.0" prefHeight="54.0" prefWidth="231.0">
+               <ButtonBar layoutX="542.0" layoutY="432.0" prefHeight="54.0" prefWidth="231.0">
                  <buttons>
-                     <Button id="stopBtn" onAction="#clickStop" mnemonicParsing="false" style="-fx-background-radius: 5;" text="Stop" />
-                   <Button id="playBtn" onAction="#clickPlay" alignment="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="255.0" style="-fx-background-radius: 5;" text="Play" />
+                     <Button fx:id="stopBtn" mnemonicParsing="false" onAction="#clickStop" style="-fx-background-radius: 5;" text="Stop" />
+                   <Button fx:id="playBtn" alignment="CENTER" mnemonicParsing="false" onAction="#clickPlay" prefHeight="32.0" prefWidth="255.0" style="-fx-background-radius: 5;" text="Play" />
                  </buttons>
                </ButtonBar>
-               <MediaView id="view" fitHeight="150.0" fitWidth="400.0" layoutX="31.0" layoutY="41.0" />
+               <Pane prefHeight="400.0" prefWidth="800.0">
+                  <children>
+                     <MediaView fx:id="view" fitHeight="400.0" fitWidth="800.0" />
+                  </children>
+               </Pane>
             </children></AnchorPane>
         </Scene>
     </scene>
