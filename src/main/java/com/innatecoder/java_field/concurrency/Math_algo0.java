@@ -21,16 +21,17 @@ class Data {
 
 class DataGeneric {
 
-    public static <T> List<T> fill(int numOfElements, T elem) {
+    public static <T extends Number> List<T> fill(int numOfElements, T elem) {
 
         List<T> data = new ArrayList<T>();
         
         
         //Random random = new Random();
-        
+
         for(int i = 0; i < numOfElements; i++)
             data.add(elem);
 
+       
         return data;
     }
 }
@@ -45,7 +46,8 @@ public class Math_algo0 {
 
      public static void main(String[] args) {
         //var arr = Data.fill(20);
-        var arr = DataGeneric.fill(10, 5);
+        var arr = DataGeneric.fill(10, 2);
+
         System.out.println(arr.toString());
 }
 }
